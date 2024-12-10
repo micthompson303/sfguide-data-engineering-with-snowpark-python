@@ -103,12 +103,12 @@ def main(session: Session) -> str:
 
 
 # For local debugging
-# Be aware you may need to type-convert arguments if you add input parameters
-if __name__ == '__main__':
-    # Create a local Snowpark session
-    with Session.builder.getOrCreate() as session:
-        import sys
-        if len(sys.argv) > 1:
-            print(main(session, *sys.argv[1:]))  # type: ignore
-        else:
-            print(main(session))  # type: ignore
+# # Be aware you may need to type-convert arguments if you add input parameters
+# if __name__ == '__main__':
+#     # Create a local Snowpark session
+#     with Session.builder.getOrCreate() as session:
+#         import sys
+#         if len(sys.argv) > 1:
+#             print(main(session, *sys.argv[1:]))  # type: ignore
+#         else:
+#             print(main(session))  # type: ignore
